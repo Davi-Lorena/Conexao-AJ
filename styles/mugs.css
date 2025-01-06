@@ -1,0 +1,74 @@
+section#mugs {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  border-radius: .5rem;
+  margin: 2rem 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-self: center;
+margin-inline: auto;
+
+& h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+& p {
+        font-size: 1.25rem;
+        color: #4a5568;
+}
+
+& img {
+    margin: 3rem;
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 1rem;
+}
+
+& .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    text-align: center;
+
+    & .feature {
+        padding: 1.5rem;
+        width: 100%;
+        max-width: 30rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+
+&  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  & h3 {
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  & p {
+    color: #4a5568;
+    line-height: 1.6;
+  }
+
+&:hover {
+    transform: translateY(-.25rem);
+}
+
+      }
+
+}
+
+
+}
