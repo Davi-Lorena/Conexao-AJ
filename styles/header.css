@@ -3,23 +3,23 @@ header {
     background-color: black;
     padding: 1rem;
 position: relative;
+display: grid;
 
 & #layout-header {
     display: flex;
 align-items: center;
 justify-content: center;
-
 gap: 2rem;
 
 }
 
-    & img {
-        width: 7rem;
-        border-radius: 3.5rem;
-        z-index: 1;
-  filter: drop-shadow(0 0 5px #ffffff68);
+& img[src*="Logo"] {
+    width: 7rem;
+    border-radius: 3.5rem;
+    z-index: 1;
+filter: drop-shadow(0 0 5px #ffffff68);
 
-    }
+}
 
 
 & nav {
