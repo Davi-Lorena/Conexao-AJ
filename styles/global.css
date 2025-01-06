@@ -1,5 +1,27 @@
-* {
+/* Reset */ 
+
+*, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Utils */
+
+.container {
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+/* General */ 
+
+body {
+    /* background-color: rgba(246, 244, 177, 0.715); */
+    background-color: #f5f5f5;
+}
+
