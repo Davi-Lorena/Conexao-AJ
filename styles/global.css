@@ -23,7 +23,6 @@ a {
     height: 16rem;
     padding: .5rem;
 border: 1px solid #e4e8eb;
-margin-bottom: 5rem;
 border-radius: .5rem;
 display: flex;
 flex-direction: column;
@@ -56,6 +55,10 @@ background: #f5f7fa;
 
 /* General */ 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* background-color: rgba(246, 244, 177, 0.715); */
     background-color: #fff;
@@ -65,3 +68,23 @@ body {
 h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
 } 
+
+/* Test */
+
+#test {
+    & h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+& .materials {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+}
