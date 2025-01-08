@@ -14,7 +14,7 @@ font-size: 1.75rem;
 }
 
 & span {
-    font-size: 1.15rem;
+    font-size: .975rem;
 }
 
 }
@@ -77,9 +77,9 @@ padding: .25rem
     section#hero {
         padding-block: 4rem;
         & #title {
-            font-size: 2.5rem;
+            font-size: 2.25rem;
             & span {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
             }
         }
 

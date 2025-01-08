@@ -59,5 +59,9 @@ background: #f5f7fa;
 body {
     /* background-color: rgba(246, 244, 177, 0.715); */
     background-color: #fff;
+    font-family: 'Roboto flex', sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+} 
