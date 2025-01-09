@@ -19,9 +19,9 @@ a {
 }
 
 .materials-container {
+    padding-bottom: 3rem;
 
 & .materials {
-    padding-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
@@ -32,7 +32,6 @@ a {
 }
 
 .section-title {
-    max-width: 50rem;
     margin-block: 2.5rem 1.25rem;;
 
 & .title-underline {
@@ -47,13 +46,17 @@ a {
     margin: 0;
 }
 
+& .center {
+    text-align: center;
+}
+
 }
 
 .material {
     width: 10.5rem;
     height: 16rem;
     padding: .5rem;
-border: 1px solid #e4e8eb;
+border: 1px solid #aaacad;
 border-radius: .5rem;
 display: flex;
 flex-direction: column;
@@ -62,7 +65,7 @@ background: #f5f7fa;
     & img {
         width: 9.5rem;
         height: 12rem;
-        border: 2px solid #e4e8eb;
+        border: 2px solid #aaacad;
         object-fit: cover;
         border-radius: inherit;
     }
