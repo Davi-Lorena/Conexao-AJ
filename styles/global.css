@@ -61,7 +61,7 @@ a {
 
 .material {
     width: 10.5rem;
-    height: 16rem;
+    height: max-content;
     padding: .5rem;
 border: 1px solid #aaacad;
 border-radius: .5rem;
@@ -75,6 +75,14 @@ background: #f5f7fa;
         height: 12rem;
         border: 2px solid #aaacad;
         border-radius: inherit;
+        cursor: pointer;
+        transition: all 250ms ease;
+        
+&:hover, &:focus {
+    scale: 1.1;
+    transform: translateY(-.5rem);
+}
+
     }
 
 & .tags {
@@ -87,6 +95,10 @@ background: #f5f7fa;
     & strong  {
         font-size: 1.05rem;
         font-weight: 550;
+    }
+
+    & span {
+        font-size: .875rem;
     }
 
 }
