@@ -110,10 +110,9 @@ margin-inline: auto;
 display: flex;
 flex-wrap: wrap;
 gap: .5rem;
-justify-content: center;
-
+align-items: center;
+flex-direction: column;
 & span {
-    font-size: 1.15rem;
     font-weight: 550;
     color: #333;
 }
@@ -158,3 +157,13 @@ body {
 h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
 } 
+
+@media (width >= 768px) {
+    .more {
+        & div {
+            & span {
+                font-size: 1.15rem;
+            }
+        }
+    }
+}
