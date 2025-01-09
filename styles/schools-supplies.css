@@ -1,0 +1,12 @@
+#school-supplies h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    color: #2d3748;
+}
+
+@media (width >= 768px) {
+    #school-supplies h2 {
+        font-size: 2.5rem;
+    }
+}
