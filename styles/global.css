@@ -105,6 +105,13 @@ background: #f5f7fa;
 
 }
 
+.ask-price {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Roboto flex', sans-serif;
+}
+
+
 .more {
     color: #333;
     padding: 1.25rem;
