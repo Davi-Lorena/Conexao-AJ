@@ -23,11 +23,12 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
 }
 
-& img {
+& img#your-art {
     margin: 3rem;
     max-width: 15rem;
     max-height: 15rem;
     border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 & .features {
