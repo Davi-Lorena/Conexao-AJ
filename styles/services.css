@@ -49,6 +49,13 @@ section#other-services {
         line-height: 1.4;
       }
 
+      & video, img {
+        margin-top: .75rem;
+        width: 12rem;
+        border-radius: .5rem;
+        box-shadow: 0 0 3px #333;
+      }
+
 }
 
 @media (width >= 768px) {
