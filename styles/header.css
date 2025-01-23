@@ -18,6 +18,11 @@ gap: 2rem;
     border-radius: 3.5rem;
     z-index: 1;
 filter: drop-shadow(0 0 5px #ffffff68);
+transition: scale 300ms ease;
+
+&:hover {
+    scale: 1.1;
+}
 
 }
 

@@ -79,10 +79,28 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
 gap: .5rem;
 justify-content: center;
+
+& div {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: .5rem;
+  align-items: center;
+width: 13rem;
+padding-top: .5rem;
+
+  & span {
+    padding-block: .25rem;
+    text-align: center;
+  }
+
+}
+
   & video {
     width: 12rem;
     border-radius: .5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #aaacad;
+
   }
 
 }
