@@ -1,6 +1,6 @@
 # Papelaria Conexão AJ ✂️ 
 
-![Captura de tela 2025-01-23 164945](https://github.com/user-attachments/assets/8fc7d9ce-c5ec-4600-b35b-016e6df7dbc8)
+![Captura de tela 2025-01-24 112531](https://github.com/user-attachments/assets/1e85213d-1b15-42dd-b9e4-1a57accdca86)
 
 ## Visão geral 🔦
 Site para a empresa papelaria Conexão AJ com ênfase no "Volta às aulas 2025", contendo produtos disponíveis, serviços oferecidos, endereço e contato. O intuito do site é de somente apresentar o que é oferecido ao cliente e incentivar o contato e a compra fisicamente na loja. 
