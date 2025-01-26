@@ -1,139 +1,214 @@
-
 header {
-    background-color: #29262c;
-    padding: 1rem;
-position: relative;
-display: grid;
-
-& #layout-header {
+    background-color: #f2f1f3;
     display: flex;
-align-items: center;
-justify-content: center;
-gap: 2rem;
 
 }
 
-& img[src*="Logo"] {
-    width: 7rem;
+#layout-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex: 1;
+    position: fixed;
+    background-color: #ebebeb;
+}
+
+.logo {
+    height: 7rem;
+    padding-left: 2rem;
+    padding-top: 0.4rem;
+    flex: 1;
+}
+
+.imagem-logo {
+    width: 6rem;
     border-radius: 3.5rem;
     z-index: 1;
-filter: drop-shadow(0 0 5px #ffffff68);
-transition: scale 300ms ease;
-
-&:hover {
-    scale: 1.1;
-}
+    filter: drop-shadow(0 0 5px #ffffff68);
+    transition: scale 300ms ease;
 
 }
 
-
-& nav {
-    z-index: 1;
-display: flex;
-flex-direction: column;
-gap: .5rem;
-
-& p {
-text-align: center;
-color: #fff;
-font-size: .875rem;
-}
-
-
-& a {
-    padding: 0.5rem;
-    border: 1px solid #29262c;
+.menu {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
-    border-radius: 0.5rem;
+    align-content: center;
+    justify-content: center;
+    flex: 3;
+    font-size: 20px;
+    font: 400;
+}
+
+.menu ul li:hover {
+    cursor: pointer;
+    background-color: rgb(177, 175, 175);
+
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-decoration: none;
-    color: inherit;
-    transition: scale 0.3s ease, color 0.3s ease;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #000000;
 }
 
-& a img {
-    width: 1.25rem;
+.menu ul li {
+    border:1px solid #000000;
+    border-radius: 5px;
+    height: 2rem;
+    scale: 1.1;
+    align-items: center;
+    align-content: center;
 }
 
-& .btn-instagram {
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex: 1;
+    height: 4rem;
+}
+
+.botao-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+
+}
+.botao a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 0.1rem;
+    width: 7.1rem;
+    height: 3rem;
+    border-radius: 5px;
+}
+.btn-instagram {
     background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
     border-color: #DD2A7B;
     color: #ffffff;
     filter: drop-shadow(0 0 4px #dd2a7b);
-}
+} 
 
-& .btn-instagram:hover, .btn-whatsapp:hover {
+.btn-instagram:hover,
+.btn-whatsapp:hover {
     scale: 1.05;
-}
-
-}
+} 
 
 
-}
+ @media (width < 750px) {
+    .topo{
+        width: 100vw;
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
 
-#bg-img {
-    position: absolute;
-   inset: 0;
-    background-image: url(../assets/bg-test4.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    opacity: .3;
-}
 
-@media (width < 375px) {
-    header {
-        & nav {
-            & p {
-                font-size: 0.75rem;
+    .logo {
+        width: 5rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        padding-left: 1rem;
+        padding-top: 0.4rem;
+        flex: 1;
+    }
+
+    .imagem-logo {
+        width: 2.3rem;
+        border-radius: 3.5rem;
+
+    }
+
+    .menu {
+        flex: 2;
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contatos {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-items: flex-start;
+        justify-content: space-around;
+        gap: .5rem;
+        scale: 0.7;
+
+    }
+
+    .menu ul {
+        gap: 0.1rem;
+    }
+
+} 
+
+/* 
+    @media (width <=750px) {
+        header {
+            & #layout-header {
+                gap: 5rem;
+            }
+
+            & nav {
+                flex-direction: row;
+                gap: 2rem;
+
+                & p {
+                    font-size: 1rem;
+                }
+
+                & a {
+                    padding: .5rem;
+                    filter: drop-shadow(0 0 5px #ffffff75);
+                }
+
+            }
+
+        }
+
+        #bg-img {
+            background-position: right;
+            background-image: url(../assets/bg-test4-h.jpeg);
+
+        }
+    }
+
+    @media (width >=1024px) {
+        header {
+            & nav {
+                & p {
+                    font-size: 1rem;
+                }
+
+                & a {
+                    padding: .75rem;
+                }
+
             }
         }
-    }
-}
-
-
-@media (width >= 750px) {
-    header {
-        & #layout-header {
-            gap: 5rem;
-        }
-
-& nav {
-    flex-direction: row;
-    gap: 2rem;
-
-& p {
-    font-size: 1rem;
-}
-
-    & a {
-        padding: .5rem;
-  filter: drop-shadow(0 0 5px #ffffff75);
-    }
-
-}
-
-    }
-
-#bg-img {
-    background-position: right;
- background-image: url(../assets/bg-test4-h.jpeg);
-
-}
-}
-
-@media (width >= 1024px) {
-    header {
-        & nav {
-            & p {
-               font-size: 1rem; 
-            }
-
-& a {
-    padding: .75rem;
-}
-
-        }
-    }
-}
+    } */

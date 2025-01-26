@@ -30,10 +30,28 @@ a {
     filter: drop-shadow(0 0 4px #25d366);
 }
 
+.btn-instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    border-color: #DD2A7B;
+    color: #ffffff;
+    filter: drop-shadow(0 0 4px #dd2a7b);
+} 
+
+.btn-localização {
+    background-color: #0501f5;
+    border-color: #fff;
+    color: #ffffff;
+    filter: drop-shadow(0 0 4px #0166f4);
+}
+
+.btn-instagram:hover,
+.btn-whatsapp:hover {
+    scale: 1.05;
+} 
 .materials-container {
     padding-bottom: 3rem;
-
-& .materials {
+}
+.materials {
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
@@ -41,7 +59,7 @@ a {
     justify-content: center;
 }
 
-}
+
 
 .section-title {
     margin-block: 2.5rem 1.25rem;;
@@ -124,9 +142,11 @@ background: #f5f7fa;
     display: flex;
     border-radius: .5rem;
     flex-direction: column;
-    border: 1px solid #aaacad;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffffff;
+    background-color: #25D366;
+    border-color: #fff;
+    color: #ffffff;
+    box-shadow: (0 0 4px #25d366);
 max-width: 30rem;
 margin-inline: auto;
 
@@ -151,6 +171,7 @@ a {
 
 &:hover {
     transform: scale(1.05);
+    
 }
 
 }
